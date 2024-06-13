@@ -1,0 +1,417 @@
+{
+  "packageName": "com.model",
+  "packageLabel": "Master model",
+  "packageDescription": "Contains all the model behaviour of plant master",
+  "modifiedBy": null,
+  "isDeprecated": false,
+  "version": 1,
+  "requiredPackages": [
+    "core"
+  ],
+  "classes": [
+    {
+      "name": "plant",
+      "label": "Plant",
+      "description": "Plant Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "profitCenter",
+      "label": "Profit Center",
+      "description": "ProfitCenter Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "storageLocation",
+      "label": "Storage Location",
+      "description": "StorageLocation Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "storageBin",
+      "label": "Storage Bin",
+      "description": "StorageBin Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "valuationClass",
+      "label": "Valuation Class",
+      "description": "ValuationClass Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "priceControl",
+      "label": "Price Control",
+      "description": "PriceControl Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "valuationCategory",
+      "label": "Valuation Category",
+      "description": "ValuationCategory Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "varianceKey",
+      "label": "Variance Key",
+      "description": "Variance Key Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    },
+    {
+      "name": "department",
+      "label": "Department",
+      "description": "Department Model from Plant Service",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    }
+  ],
+  "dataTypes": [
+    {
+      "constraintType": null,
+      "coreType": null,
+      "name": null,
+      "isDeprecated": null,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": null,
+      "javaClass": null,
+      "values": []
+    }
+  ],
+  "attributes": [
+    {
+      "name": "code",
+      "label": "Code",
+      "dataType": "core.string",
+      "description": "Master records unique code",
+      "isMultiValued": true,
+      "isDeprecated": false,
+      "isDerived": false,
+      "isData": false
+    },
+    {
+      "name": "name",
+      "label": "Name",
+      "dataType": "core.string",
+      "description": "Mater record unique Name",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": false,
+      "isData": false
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "dataType": "core.string",
+      "description": "Master records description value",
+      "isMultiValued": true,
+      "isDeprecated": false,
+      "isDerived": false,
+      "isData": false
+    }
+  ],
+  "classAttributes": [
+    {
+      "className": "com.model.plant",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.plant",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.plant",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.profitCenter",
+      "attributeName": "com.model.plantCenter",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.profitCenter",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.profitCenter",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.profitCenter",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageLocation",
+      "attributeName": "com.model.plantLocation",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageLocation",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageLocation",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageLocation",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageBin",
+      "attributeName": "com.model.plantBin",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageBin",
+      "attributeName": "com.model.locationBin",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageBin",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageBin",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.storageBin",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationClass",
+      "attributeName": "com.model.materialValuationClass",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationClass",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationClass",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationClass",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.priceControl",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.priceControl",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.priceControl",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationCategory",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationCategory",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.valuationCategory",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.varianceKey",
+      "attributeName": "com.model.code",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.varianceKey",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.varianceKey",
+      "attributeName": "com.model.description",
+      "isRequired": false,
+      "isDeprecated": false
+    },
+    {
+      "className": "com.model.department",
+      "attributeName": "com.model.name",
+      "isRequired": true,
+      "isDeprecated": false
+    }
+  ],
+  "associations": [
+    {
+      "name": "plantCenter",
+      "label": "Select Plant",
+      "description": "Plant to Profit Center Mapping",
+      "fromClass": "com.model.profitCenter",
+      "fromLabel": "Profit Center",
+      "toClass": "com.model.plant",
+      "toLabel": "Plant",
+      "dependsOn": "",
+      "associationKinds": [
+        "core.hasARelationship"
+      ],
+      "isDeprecated": false,
+      "isUnidirectional": true,
+      "isAggregate": false
+    },
+    {
+      "name": "plantLocation",
+      "label": "Select Plant",
+      "description": "Plant to Storage Location Mapping",
+      "fromClass": "com.model.storageLocation",
+      "fromLabel": "Storage Location",
+      "toClass": "com.model.plant",
+      "toLabel": "Plant",
+      "dependsOn": "",
+      "associationKinds": [
+        "core.hasARelationship"
+      ],
+      "isDeprecated": false,
+      "isUnidirectional": true,
+      "isAggregate": false
+    },
+    {
+      "name": "plantBin",
+      "label": "Select Plant",
+      "description": "Plant to Storage Bin Mapping",
+      "fromClass": "com.model.storageBin",
+      "fromLabel": "Storage Bin",
+      "toClass": "com.model.plant",
+      "toLabel": "Plant",
+      "dependsOn": "",
+      "associationKinds": [
+        "core.hasARelationship"
+      ],
+      "isDeprecated": false,
+      "isUnidirectional": true,
+      "isAggregate": false
+    },
+    {
+      "name": "locationBin",
+      "label": "Select Location",
+      "description": "Location to Bin Mapping",
+      "fromClass": "com.model.storageBin",
+      "fromLabel": "Storage Bin",
+      "toClass": "com.model.storageLocation",
+      "toLabel": "Storage Location",
+      "dependsOn": "com.model.plantBin",
+      "associationKinds": [
+        "core.hasARelationship"
+      ],
+      "isDeprecated": false,
+      "isUnidirectional": true,
+      "isAggregate": false
+    },
+    {
+      "name": "materialValuationClass",
+      "label": "Select Material Type",
+      "description": "Valuation Class to Material Mapping",
+      "fromClass": "com.model.materialType",
+      "fromLabel": "Material Type",
+      "toClass": "com.model.valuationClass",
+      "toLabel": "Valuation Class",
+      "dependsOn": "",
+      "associationKinds": [
+        "core.hasARelationship"
+      ],
+      "isDeprecated": false,
+      "isUnidirectional": true,
+      "isAggregate": false
+    }
+  ],
+  "associationAttributes": [
+    {
+      "name": null,
+      "referenceDataType": null,
+      "associationName": null,
+      "isRequired": null,
+      "isDeprecated": null
+    }
+  ],
+  "associationKinds": [
+    {
+      "name": null,
+      "label": null
+    }
+  ],
+  "referenceDataTypes": [
+    {
+      "name": null,
+      "referenceClass": null,
+      "label": null,
+      "isDeprecated": null
+    }
+  ]
+}

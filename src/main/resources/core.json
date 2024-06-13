@@ -1,0 +1,251 @@
+{
+  "packageName": "core",
+  "packageLabel": "Core package",
+  "packageDescription": "Contains the elements to inherit from.",
+  "modifiedBy": null,
+  "isDeprecated": false,
+  "version": 1,
+  "requiredPackages": [],
+  "classes": [
+    {
+      "name": "object",
+      "label": "Object",
+      "description": "parent class of all objects",
+      "isFirstClass": true,
+      "superClasses": [],
+      "isDeprecated": false
+    }
+  ],
+  "dataTypes": [
+    {
+      "constraintType": "NONE",
+      "coreType": "BOOLEAN",
+      "name": "boolean",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "^(true|false)$",
+      "javaClass": "java.lang.Boolean",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "CHARACTER",
+      "name": "char",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "[a-zA-Z0-9]*",
+      "javaClass": "java.lang.Character",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "INTEGER",
+      "name": "integer",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "[+-]?[0-9]+",
+      "javaClass": "java.lang.Integer",
+      "values": []
+    },
+    {
+      "constraintType": "RANGE",
+      "coreType": "INTEGER",
+      "name": "number",
+      "isDeprecated": false,
+      "fromStart": "1",
+      "toEnd": "100",
+      "regex": null,
+      "javaClass": null,
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "FLOAT",
+      "name": "float",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "[+-]?[0-9]+(\\.[0-9]+)?([Ee][+-]?[0-9]+)?",
+      "javaClass": "java.lang.Float",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "DOUBLE",
+      "name": "double",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "-?[0-9]{1,13}(\\.[0-9]*)?",
+      "javaClass": "java.lang.Double",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "STRING",
+      "name": "string",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": "null",
+      "javaClass": "java.lang.String",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "DATE",
+      "name": "date",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": null,
+      "javaClass": "java.util.Date",
+      "values": []
+    },
+    {
+      "constraintType": "NONE",
+      "coreType": "ENUM",
+      "name": "enum",
+      "isDeprecated": false,
+      "fromStart": null,
+      "toEnd": null,
+      "regex": null,
+      "javaClass": null,
+      "values": []
+    }
+  ],
+  "attributes": [
+    {
+      "name": "id",
+      "label": "Id",
+      "dataType": "core.string",
+      "description": "Common Id to all Model class",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": false,
+      "isData": false
+    },
+    {
+      "name": "createdBy",
+      "label": "Created By",
+      "dataType": "core.string",
+      "description": "Created By to all model class",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": true,
+      "isData": false
+    },
+    {
+      "name": "createdOn",
+      "label": "Created On",
+      "dataType": "core.date",
+      "description": "Created ON to all model class",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": true,
+      "isData": false
+    },
+    {
+      "name": "modifiedBy",
+      "label": "Modified By",
+      "dataType": "core.string",
+      "description": "Modified By to all model class",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": true,
+      "isData": false
+    },
+    {
+      "name": "modifiedOn",
+      "label": "Modified On",
+      "dataType": "core.date",
+      "description": "Modified ON to all model class",
+      "isMultiValued": false,
+      "isDeprecated": false,
+      "isDerived": true,
+      "isData": false
+    }
+  ],
+  "classAttributes": [
+    {
+      "className": "core.object",
+      "attributeName": "core.id",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "core.object",
+      "attributeName": "core.createdBy",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "core.object",
+      "attributeName": "core.createdOn",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "core.object",
+      "attributeName": "core.modifiedBy",
+      "isRequired": true,
+      "isDeprecated": false
+    },
+    {
+      "className": "core.object",
+      "attributeName": "core.modifiedOn",
+      "isRequired": true,
+      "isDeprecated": false
+    }
+  ],
+  "associations":[
+    {
+      "name": null,
+      "label": null,
+      "description": null,
+      "fromClass": null,
+      "fromLabel": null,
+      "toClass": null,
+      "toLabel": null,
+      "dependsOn": null,
+      "associationKinds": [],
+      "isDeprecated": null,
+      "isUnidirectional": true,
+      "isAggregate": null
+    }
+  ],
+  "associationAttributes": [
+    {
+      "name": null,
+      "referenceDataType": null,
+      "associationName": null,
+      "isRequired": null,
+      "isDeprecated": null
+    }
+  ],
+  "associationKinds": [
+    {
+      "name": "parentChild",
+      "label": "Parent Child"
+    },
+    {
+      "name": "relatedKind",
+      "label": "Related Kind"
+    },
+    {
+      "name": "hasARelationship",
+      "label": "Has a Relationship"
+    }
+  ],
+  "referenceDataTypes": [
+    {
+      "name": null,
+      "referenceClass": null,
+      "label": null,
+      "isDeprecated": null
+    }
+  ]
+}

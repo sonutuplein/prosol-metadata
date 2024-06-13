@@ -1,0 +1,43 @@
+# Server configuration
+server:
+  port: 8081
+  forward-headers-strategy: framework
+  shutdown: graceful
+
+# Spring configuration
+spring:
+  lifecycle:
+    timeout-per-shutdown-phase: 1m # The server will wait up to one minute for active requests to complete
+  application:
+    name: meta-data # The server application name
+
+  # Db Configuration
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/metadata
+  #      auto-index-creation: true
+
+  # Output configuration
+  output:
+    ansi:
+      enabled: always
+
+# OpenApi Swagger configuration
+springdoc:
+  swagger-ui:
+    display-request-duration: true
+    operationsSorter: method
+    tags-sorter: method
+    deep-linking: true
+    defaultModelsExpandDepth: 1
+    defaultModelExpandDepth: 1
+    display-operation-id: false
+    filter: false
+    show-extensions: false
+    use-root-path: true
+    show-common-extensions: true
+    try-it-out-enabled: true
+  cache:
+    disabled: false
+  show-actuator: false
+  writer-with-default-pretty-printer: true
